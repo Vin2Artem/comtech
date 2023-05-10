@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    background-color: #F8F9FA;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+header {
+    background-color: #212529;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+    width: calc(100% - 10px);
+}
+
+.header a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    max-width: 1120px;
+    margin: 10px auto 0;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 80px);
+    height: 100vh;
+    min-width: 220px;
+    justify-content: space-between;
+    /*padding-right: 10px;*/
+    position: sticky;
+    top: 80px;
+}
+
+menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_item {
+    padding: 6px;
+    display: flex;
+}
+
+.menu_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.menu_img {
+    width: 25px;
+    height: 25px;
+}
+
+.left a {
+    line-height: 2;
+    color: black;
+}
+
+.left a:hover {
+    background-color: #E5E7EB;
+}
+
+.profile {
+    display: flex;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.nick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+}
+
+.content {
+    width: calc(100% - 12px);
+    overflow-y: auto;
+    padding: 0 6px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.rotated {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+}
+
+.schedule {
+    margin: 0 auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+td,
+th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+.input-field {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    /*margin: 0 10px 0 1px;*/
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    margin-left: 10px;
+}
+
+.btn-green {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-green:hover {
+    background-color: #3e8e41;
+}
+
+.btn-yellow {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f5a623;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-yellow:hover {
+    background-color: #d88e17;
+}
+
+.btn-red {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-red:hover {
+    background-color: #c62828;
+}
+
+
+
+.block-centered {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.news-item {
+    margin-top: 20px;
+}
+
+.news-info {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: end;
+}
+
+.news-description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.users,
+.contracts {
+    max-height: calc(100vh - 230px);
+    overflow: overlay;
+}
+
+.contracts>table {
+    margin: 0 auto;
+}
+
+#errBlock {
+    color: red;
+}
+
+.s-32 {
+    width: 32px;
+    height: 32px;
+}
+
+.s-40 {
+    width: 40px;
+    height: 40px;
+}
+
+.chat-item {
+    margin: 10px 0;
+    display: flex;
+    color: black;
+}
+
+.chat-image {
+    margin-right: 10px;
+}
+
+.chat-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.chat-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.msg-message {
+    margin-top: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.send {
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+}
+
+.admin-panel {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.gray {
+    color: gray;
+}
+
+.field-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.field-value img {
+    margin-bottom: 10px;
+}
+
+.profile-form {
+    margin-top: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: larger;
+}
+
+.field-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.field-name {
+    width: 120px;
+}
+
+.field-value {
+    text-align: center;
+}
